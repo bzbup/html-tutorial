@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <!-- "title" is the name of the website, viewed in the tab-->
+    <title>my first website</title>
+
+    <!-- whiit this you can add an icon on the left of the title-->
+    <link rel="icon" type="image/x-icon" href="shre.jpg">
+    ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    <!-- "meta" rapresent various types of metadata-->
+    <meta charset="UTF-8">
+    <meta name="description" content="aaaaaaaaa">
+    <meta name="keyword" content="a, a, a, a, a">
+    <meta name="author" content="me">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+
+    <!-- 
+
+        'charset' specifies to the browser what character encoding to use for the page
+        
+        'content' is the thing describes in the name's aattribute
+
+        'name' 
+            *description* is a description of the website
+            *keyword* are the keywords of the website
+            *author* is the name of the website's author
+            *viewport* rapresent the scale of the website, with the content in the example, it will change depending on if you loaded it on smartphone or pc
+        
+        'http-equiv'
+         *refresh* refresh the page every x seconds, set in the content
+    -->
+
+    
+</head>
+
+<body>
+
+    <hr>
+<!-- "h1" aggiunge un titolo-->
+    <h1> this is a website </h1>  
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+<!-- "p" aggiunge un paragrafo-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, placeat. Necessitatibus, quibusdam? Nulla cumque commodi accusamus illo. Reprehenderit repellendus deleniti velit quae eius, alias dicta voluptatum enim facere suscipit atque?</p>
+        <br>        
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fuga nemo quod voluptates illo consequuntur deserunt, sequi ipsam libero, quia harum ipsum laborum laboriosam sunt. Sint exercitationem praesentium dignissimos nisi.</p>
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+<!-- "a" aggiunge un hypertext,-->
+        <br><br>
+    <a href="page2.html"  target=_self title="this takes you to page 2">go to page 2</a>
+        <br>        
+    <a href="page2.html"  target=_blank title="this takes you to page 2">go to page in another tab 2</a>
+        <br><br>
+    <a href="mailto:ziopera00@gmail.com" target="_self" title="manda una email"> manda una email allo zio delle pere</a>
+        <br><br>
+<!--    
+    - *href* va al link;
+    - *target* indica dove aprire il link ('_self' nella stessa scheda e '_blank' in un'altra)
+    - *title* mette un testo se si passa col cursore
+-->
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+        
+<!-- "img" aggiunge una foto-->
+        <br><br>
+        <img src="shre.jpg" height="200" width="100" alt="this is a photo of shrek">
+    
+        <a href="https://it.wikipedia.org/wiki/Shrek_(film)">
+    
+        <img src="/images/shre2.jpg" height="200" width="100" alt="this is a photo of shrek">
+        <!-- se si inserisce all'interno del comando per il link, cliccando la foto ce lo aprirà-->
+        </a>   
+       
+        <img src="/images/shre3.jpg" height="200" width="100" alt="this is a photo of shrek">
+        <!-- shre3 non esiste quindi mostra il testo alternativo-->
+
+
+<!--    
+    - *src* cerca la foto nella cartella del sito, se la foto è all'interno di un'altra cartella (sempre dentro la principale) bisogna anticipare il link della foto con /nomecartella/ quindi sarà /nomecartella/nomefoto.png;
+    - *height* indica l'altezza della foto in pixel
+    - *width* indica la larghezza della foto in pixel
+    - *alt* è un testo alternativo da mostrare in caso che la foto non sia disponibile
+-->
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+        
+<!-- "audio" aggiunge un audio-->
+        <br><br>
+
+        <p>audio</p>
+        <audio controls src="audio.mp3"></audio>
+            <!-- produrre un audio alternativo in caso che il primo non ia supportrato: -->
+        <audio>
+            <source src="audio.mp3">
+            <source src="audio.wav">
+          questo audio non è supportato
+            <!-- messaggio alternativo in caso che nessun formato sia supportato-->
+        </audio>
+
+
+<!--    
+    - *controls* rende disponibili i controlli;
+    - *autoplaay* fa partire l'audio senza bisogno di interagire
+    - *mute* fa partire l'audio mutato
+    - *loop* ripete l'audio all'infinito
+    - *src* cerca l'audio nella cartella del sito
+-->
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+  <!-- "video" aggiunge un video-->
+  <br><br>
+  <p>best video (play with low volume)</p>
+  <video controls loop muted width="500">
+    <source src="video.mp4">
+  </video>
+  <br>
+  <a href="https://www.youtube.com/watch?v=SLEBlJ9DTAI" target="_blank" title="video from youtube">click here for the original video</a>
+
+
+<!--    
+    - *controls* rende disponibili i controlli;
+    - *autoplaay* fa partire il video senza bisogno di interagire
+    - *loop* ripete il video all'infinito
+    - *mute* fa partire il video mutato
+    - *src* cerca il video nella cartella del sito
+-->
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+  <!-- text formatting-->
+  <!-- the style tag is only to make a bigger font, we'll see it in the css easy guide-->
+  <br><br>
+
+    <p style="font-size: 20px;">this is a normal text</p>
+    <p style="font-size: 20px;">this is a <strong>strong</strong> text</p>
+    <p style="font-size: 20px;">this is a <b>bold</b> text</p>
+    <p style="font-size: 20px;">this is an <em>emphasized</em> text</p>
+    <p style="font-size: 20px;">this is an <i>italic</i> text</p>
+    <p style="font-size: 20px;">this is a <big>big</big> text</p>
+    <p style="font-size: 20px;">this is a <small>small</small> text</p>
+    <p style="font-size: 20px;">this is a <sub>subscript</sub> text</p>
+    <p style="font-size: 20px;">this is a <sup>superscript</sup> text</p>
+    <p style="font-size: 20px;">this is an <ins>inserted</ins> text</p>
+    <p style="font-size: 20px;">this is a <del>deleted</del> text</p>
+    <p style="font-size: 20px;">this is a <mark>marked</mark> text</p>
+
+
+<!-- i don't write anything here because the tags are described in the paragraph-->
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+ 
+  <!-- LISTS-->
+  <br><br>
+
+  <!--  "ol" creates ordered lists: 'li' adds an element-->
+  <h1>ordered list</h1>
+    <ol>
+        <li>wake up</li>
+        <li>read some pages of a book</li>
+        <li>do exercise</li>
+    </ol>
+
+  <h3>it can be like this too</h3>
+  <!-- there are 5 types of order
+        - '1' numbers (is  the standard so you can avoid to write this  type)
+        - 'A' uppercase letters
+        - 'a' lowercase letters
+        - 'I' uppercase roman numbers
+        - 'i' lowercase roman numbers-->
+    <ol type="A">
+        <li>wake up</li>
+        <li>read some pages of a book</li>
+        <li>do exercise</li>
+    </ol>
+
+
+  <!-- "ul" creates an unordered lists: 'li' adds an element-->
+  <h1>unordered list</h1>
+    <ul>
+        <li>milk</li>
+        <li>water</li>
+        <li>meat</li>
+    </ul>
+
+
+  <!-- "dl" creates a  description list: 'dt' is used for terms, 'dd' is used for definitions-->
+  <h1>description list</h1>
+    <dl>
+        <dt>CIAO</dt>       <!--term-->
+            <dd>hello in italian</dd>   <!-- definition-->
+        <br>
+        <dt>HOLA</dt>
+            <dd>hello in spanish</dd>
+    </dl>
+
+  <!-- you can also put a list into a list -->
+  <!-- for example -->
+  <h1>list into a list</h1>
+  <ul>
+    <li>milk</li>
+    <li>water</li>
+    <li>meat</li>
+    <!-- we comprend more types of meat so: -->
+        <ol>
+            <li>chicken</li>
+            <li>bacon</li>
+        </ol>
+
+  </ul>
+  ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+  <!-- "table" adds a table: 'tr' adds a row, 'th' adds an headder column, 'td' adds a text column-->
+  <br><br>
+  <table bgcolor="black" width="700">
+
+            <tr bgcolor="grey">
+                <th width="100">monday</th>
+                <th width="100">tuesday</th>
+                <th width="100">wednsday</th>
+                <th width="100">thursday</th>
+                <th width="100">friday</th>
+                <th width="100">saturday</th>
+                <th width="100">sunday</th>
+            </tr>
+            
+            <tr bgcolor="lightgrey" align="center">
+                <td width="100">monday</td>
+                <td width="100">tuesday</td>
+                <td width="100">wednsday</td>
+                <td width="100">thursday</td>
+                <td width="100">friday</td>
+                <td width="100">saturday</td>
+                <td width="100">sunday</td>
+            </tr>
+
+    <!-- you can add background colors to identify the borders in the "table" command and in the other ones to identify the writings
+         then you can aign the writings: left, center and right
+        you can also add an height and a width for the table box-->
+
+  </table>
+  ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+  <!-- "span" isolates part of a sentence-->
+  <br>
+
+  <p>Lorem <span style="color:blue">ipsum dolor sit amet consectetur adipisicing elit.</span> Doloremque enim inventore eius deleniti nemo cumque blanditiis cupiditate doloribus pariatur debitis excepturi ipsa quidem, quasi accusamus, omnis veritatis velit numquam itaque!</p>
+
+  ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+  <!-- "div" separates a portion of the document-->
+
+  <div style="color:blue">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis nulla inventore labore quas nobis, aspernatur et recusandae laudantium error quaerat. Quos deleniti itaque dignissimos quae obcaecati mollitia laborum eos eaque.    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum incidunt iste, ullam perferendis assumenda tempora harum. Vitae, eius ipsum blanditiis, libero eos harum itaque eligendi cum aspernatur, explicabo quod earum.</p>
+  </div>
+  
+  <!-- instead of setting the color to each paragraph we can divide that part of document
+       and work on it-->
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+  <!-- "iframe" is used to put something from a page to the HTML document -->
+  <br><br>
+
+
+   <iframe src="page2.html" width="200" height="100"></iframe>
+ 
+  <!-- inside of 'src' u put the embedded page's link 
+       you can also put another html page that is in the directory you're working with
+       (the border is included, you can remove it with css commands)-->
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+  <!-- "button" insert a clickable button wich can be programmed to do something specific-->    
+  <br><br>
+
+  <a href="page2.html">
+    <button> click me to go to page 2</button>
+  </a>
+
+  <br><br>
+  
+
+
+
+  <!-- 
+    you can make a shortcut to a link, including the button between "a" tags
+
+    you can disable the button too, writing 'disabled' in the opening button tag
+    
+    we'll see this command better in the javascript manual but here is an example of it
+-->
+
+
+    <p id="p1">hello</p>
+    <button onclick="document.getElementById('p1').innerHTML = 'ciao'"> click me to translate in italian </button>
+
+  <!-- 
+    doing so, when we click the button, the paragraph with id=p1 will change whit the text wrote after '.innerHTML'-->
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+<!-- "form" create a form -->
+<br><br>
+
+<form>
+    <div>
+         <label for="username"> username: </label>
+         <input id="username" name="username" type="text" placeholder="username">
+    </div>
+
+         <br>
+
+    <div>
+         <label for="password"> password: </label>
+         <input id="password" name="password" type="password">
+    </div>
+
+         <br>
+
+    <div>
+         <label for="email"> email:&nbsp &nbsp &nbsp &nbsp</label>
+         <input id="email" name="email" type="email" placeholder="myemail@gmail.com">
+    </div>
+                    <!-- '&nbsp' adds spaces-->
+         <br>
+        
+    <div>
+         <label for="cellphone"> cellphone: </label>
+         <input id="cellphone" name="cellphone" type="tel" placeholder="+39 333 333 3333">
+    </div>
+
+         <br>
+
+    <div>
+         <label for="username"> username: </label>
+         <input id="username" name="username" type="text" placeholder="username">
+    </div>
+
+         <br>
+
+    <div>
+         <label for="date"> date: &nbsp &nbsp &nbsp &nbsp</label>
+         <input id="date" name="date" type="date" placeholder="date">
+    </div>
+
+         <br>
+
+    <div>
+         <label for="quantity"> quantity: </label>
+         <input id="quantity" name="quantity" type="number">
+    </div>
+
+        <br>
+
+    <div>
+        <label>M</label>
+        <input type="radio" name="sex" value="M">
+        <label>F</label>
+        <input type="radio" name="sex" value="F">
+    </div>
+
+        <br>
+
+    <div>
+        <label>sex: </label>
+        <select>
+            <option>m</option>
+            <option>f</option>
+        </select>
+    </div>
+
+        <br>
+
+    <div>
+        <input type="reset">
+        <input type="submit">
+    </div>
+</form>
+
+<br><br>
+<!-- 
+    these are the main types of form, depending on what you need you have to change the type
+    type="text" for texts 
+    type="password" for password 
+    type="date" for dates 
+    etc...
+
+    if you require a specific input you can add 'required' attribute, doing so without filling the form you cant submit
+ -->
+ <form>
+    <div>
+         <label> username: </label>
+         <input type="text" placeholder="username" required>
+    </div>
+
+    <input type="submit">
+ </form>
+
+
+ <br><br>
+
+ <!-- then depending on where do you need the infos you change the action and method attribute,
+if you need to send these datas to another page: -->
+
+ <form action="action_page.php" method="GET">
+    <div>
+         <label for="username"> username: </label>
+         <input id="username" name="username" type="text" placeholder="username">
+        <br>
+         <input type="submit">
+    </div>
+ </form>
+
+ <!-- 'GET' adds data to the end of the URL
+      'POST' send data directly to a server-->
+
+</body>
+
+</html>
